@@ -40,10 +40,10 @@ person_excel =  [["name","age"],["kim",13],["park",15],["lee",16]]
 keys=person_excel[0] #["name","age"]
 datas=person_excel[1:] #["kim",13],["park",15],["lee",16]
 save = []
-for data in datas: # data =["kim",13],["park",15],["lee",16]
+for data in datas:
     tmp={}
     for i in range(0,len(keys)):
-        tmp[keys[i]] = data[i] #["name","age"] = ["kim",13],["park",15],["lee",16]
+        tmp[keys[i]] = data[i]
     save.append(tmp)
 print(save)
     #     tmp[key]=""
